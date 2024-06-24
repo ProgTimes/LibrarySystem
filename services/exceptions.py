@@ -1,22 +1,21 @@
 class BookException(Exception):
-    pass
+    message: str
+
+    def __str__(self):
+        return self.message
 
 
 class BookNotFound(BookException):
-    def __init__(self):
-        super().__init__("Book not found")
+    message = "Book not found"
 
 
 class BookAlreadyExists(BookException):
-    def __init__(self):
-        super().__init__("Book already exists")
+    message = "Book already exists"
 
 
 class BookAlreadyBorrowed(BookException):
-    def __init__(self):
-        super().__init__("Book is already borrowed")
+    message = "Book is already borrowed"
 
 
 class BookNotBorrowed(BookException):
-    def __init__(self):
-        super().__init__("Book is not borrowed")
+    message = "Book is not borrowed"

@@ -1,4 +1,4 @@
-from models.book import Book
+from models.library_item import Book
 from services.library import Library
 
 if __name__ == '__main__':

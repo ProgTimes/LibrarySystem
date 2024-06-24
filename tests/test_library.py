@@ -1,7 +1,7 @@
 import pytest
 
+from models.library_item import Book
 from services import exceptions
-from models.book import Book
 from services.library import Library
 
 

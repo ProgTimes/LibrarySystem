@@ -1,5 +1,5 @@
+from models.library_item import Book
 from services import exceptions
-from models.book import Book
 
 
 class Library:
